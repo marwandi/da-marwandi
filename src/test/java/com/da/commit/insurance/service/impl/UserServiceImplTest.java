@@ -31,13 +31,13 @@ public class UserServiceImplTest {
         SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-DD");
         Date DOB = format.parse(date);
 
-        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+62821321321","1","1",1);
+        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+6281281626729","1","1",1);
 
         Response responseExpected = Response.builder()
                 .data(userDTOAct)
                 .build();
 
-        UserDTO userDTOExp = new UserDTO(3,"marwan","M",DOB,5000000,"+62821321321","1","1",1);
+        UserDTO userDTOExp = new UserDTO(3,"marwan","M",DOB,5000000,"+6281281626728","1","1",1);
 
 
         Response responseActual = userServiceImpl.packetFunction(userDTOAct);
@@ -51,7 +51,7 @@ public class UserServiceImplTest {
         String date = "1982-02-02";
         SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-DD");
         Date DOB = format.parse(date);
-        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"123123212","1","1",1);
+        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"81281626729","1","1",1);
 
         userServiceImpl.packetFunction(userDTOAct);
     }
@@ -61,7 +61,7 @@ public class UserServiceImplTest {
         String date = "1982-02-02";
         SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-DD");
         Date DOB = format.parse(date);
-        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+6283456456","1","1",1);
+        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+6281281626726","1","1",1);
 
         userServiceImpl.packetFunction(userDTOAct);
 
@@ -72,7 +72,7 @@ public class UserServiceImplTest {
         String date = "1982-02-02";
         SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-DD");
         Date DOB = format.parse(date);
-        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+62813234332","1","1",1);
+        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+6281281626725","1","1",1);
 
         userServiceImpl.packetFunction(userDTOAct);
 
@@ -83,7 +83,7 @@ public class UserServiceImplTest {
         String date = "1982-02-02";
         SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-DD");
         Date DOB = format.parse(date);
-        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+62821321321","1","1",1);
+        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+6281281626724","1","1",1);
 
         userServiceImpl.packetFunction(userDTOAct);
     }
@@ -93,7 +93,7 @@ public class UserServiceImplTest {
         String date = "1982-02-02";
         SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-DD");
         Date DOB = format.parse(date);
-        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+62821321321","1","5",1);
+        UserDTO userDTOAct = new UserDTO(3,"marwan","M",DOB,5000000,"+6281281626723","1","5",1);
 
         userServiceImpl.packetFunction(userDTOAct);
     }
