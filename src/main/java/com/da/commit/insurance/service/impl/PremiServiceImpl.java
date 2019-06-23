@@ -45,7 +45,7 @@ public class PremiServiceImpl implements PremiService {
         if(user == null) {
             throw new UserNotFoundException("Invalid User ID");
         }
-        daftarPlan(user, premiDTO);
+        listPlan(user, premiDTO);
 
         Optional<Plan> optionalPlan = planRepository.findById(premiDTO.getIdPlan());
 
@@ -67,7 +67,7 @@ public class PremiServiceImpl implements PremiService {
      * @throws UserNotFoundException for handling UserNotFoundException
      */
 
-    public void daftarPlan(User user, PremiDTO premiDTO) throws UserNotFoundException {
+    public void listPlan(User user, PremiDTO premiDTO) throws UserNotFoundException {
         Long date = new Date().getTime() - (user.getBirthDate().getTime());
         Long age = date / 31536000000L;
         log.info(age.toString());

@@ -68,7 +68,7 @@ public class PremiServiceImplTest {
 
     }
     @Test(expected = UserNotFoundException.class)
-    public void daftarPaket() throws UserNotFoundException{
+    public void listPlan() throws UserNotFoundException{
         premiDTO.setIdPlan(5);
         premiDTO.setIdUser(1);
 
@@ -76,7 +76,7 @@ public class PremiServiceImplTest {
     }
 
     @Test(expected = UserNotFoundException.class)
-    public void pekerjaan() throws UserNotFoundException {
+    public void jobType() throws UserNotFoundException {
         user.setSmokingStatus("8");
         user.setJobType("4");
 
